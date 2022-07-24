@@ -3,5 +3,7 @@ const router = express.Router({
     mergeParams: true
 })
 
+router.patch('/: userId')
+
 
 module.exports = router
