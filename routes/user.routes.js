@@ -5,7 +5,7 @@ const router = express.Router({
     mergeParams: true
 })
 
-router.patch('/: userId',
+router.patch('/:userId',
     auth,
     async (req, res) => {
         try {

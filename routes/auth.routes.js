@@ -103,7 +103,7 @@ router.post('/signInWithPassword', [
             const isPasswordEqual = await bcrypt.compare(password, existingUser.password)
             
             if (!isPasswordEqual) {
-                return res.status(400).json({
+                return res.status(400).send({
                     error: {
                         message: 'INVALID_PASSWORD',
                         code: 400
